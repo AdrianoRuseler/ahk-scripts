@@ -29,6 +29,6 @@ Send ^+t
 Send, {Enter}
 ;Send ^+e
 
-MsgBox, Após a operação de remoção do silêncio, exporte o arquivo!
+MsgBox, Após a operação de remoção do silêncio, exporte o arquivo (CRTL+SHIFT+E)!
 
 Return
