@@ -14,7 +14,7 @@ FileSelectFile MyFile, 3 , \\ODROIDXU4\Incomplete , Pick a file to truncate sile
 if MyFile =
     MsgBox, You didn't select a file
 else{
-    Run, "C:\Program Files (x86)\Audacity\audacity.exe" "%MyFile%" ; Opens selected file on Audacity
+    Run, "C:\Program Files\Audacity\audacity.exe" "%MyFile%" ; Opens selected file on Audacity
 }
 
 MsgBox, Após a importação do arquivo pressione CRTL+\ 
