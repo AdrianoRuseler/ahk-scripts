@@ -22,7 +22,6 @@ Return
 
 
 ^\::
-
 WinActivate, ahk_exe audacity.exe
 Send ^a
 Send ^+t
