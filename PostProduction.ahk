@@ -18,7 +18,7 @@ else{
 	SplitPath, MyFile,File, FileDir, FileExt, FileName ; Gets file folder path
 	SetWorkingDir %FileDir% 
 ;	MsgBox, You selected file "%MyFile%" with name %FileName% in folder %FileDir%.
-    RunWait, "C:\Program Files (x86)\Audacity\audacity.exe" %MyFile% ; Opens selected file on Audacity
+    RunWait, "C:\Program Files\Audacity\audacity.exe" %MyFile% ; Opens selected file on Audacity
 	
 ;	RunWait
 ;	MsgBox, Feche para mover "%FileName%.m4a" para %FileDir%.
