@@ -19,7 +19,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 			return
 		}
 
-		TestString = yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" %clipboard% ; When writing a file this way, use `r`n rather than `n to start a new line.
+		TestString = yt-dlp -f "(bv*[vcodec~='^((he|a)vc|h264)'][fps<=30][height<=1080]+ba[ext=m4a]/b[ext=mp4])" %clipboard% ; When writing a file this way, use `r`n rather than `n to start a new line.
 		file.Write(TestString)
 		file.Close()
 
@@ -43,7 +43,7 @@ Return
 			return
 		}
 
-		TestString = yt-dlp -f "bestaudio[ext=m4a]/best[ext=mp4]/best" -x %clipboard% ; When writing a file this way, use `r`n rather than `n to start a new line.
+		TestString = yt-dlp -x -f "bestaudio[ext=m4a]/best[ext=mp4]/best" %clipboard% ; When writing a file this way, use `r`n rather than `n to start a new line.
 		file.Write(TestString)
 		file.Close()
 
