@@ -7,6 +7,8 @@
 	if SelectedFile = ""
 		MsgBox "The dialog was canceled."
 	else{
+		; To fetch all info:
+		SplitPath SelectedFile, &name, &dir, &ext, &name_no_ext
 		MsgBox "The following file was selected:`n" SelectedFile
 		RunWait "C:\Program Files\Audacity\audacity.exe " '"' SelectedFile '"'  ; Opens
 		MsgBox "Closed:`n" SelectedFile		
